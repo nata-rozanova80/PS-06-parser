@@ -19,7 +19,6 @@ print(html_source)  # Выводим HTML-код страницы
 with open("page_source.html", "w", encoding="utf-8") as file:
     file.write(html_source)
 
-
 products = driver.find_elements(By.CLASS_NAME, 'wYUX2')
 print("Найдено продуктов:", len(products))
 
