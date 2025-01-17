@@ -27,12 +27,8 @@ parsed_data = []
 for product in products:
     print(0)
     try:
-# class="wYUX2"><a tabindex="0" class="ui-GPFV8 qUioe ProductName ActiveProduct"
-# href="/product/divan-numo-velvet-yellow"><span itemprop="name">Диван Нумо Velvet Yellow</span></a>
-# <link itemprop="url" href="https://www.divan.ru/product/divan-numo-velvet-yellow">
-# <meta itemprop="price" content="36990"><meta itemprop="priceCurrency" content="RUB"><link itemprop="availability"
         print(1)
-        # name = product.find_element(By.CSS_SELECTOR, 'span[itemprop="name"]').get_attribute('text')
+   
         # Находим элемент по классу и извлекаем название
         name_element = driver.find_element(By.CSS_SELECTOR, 'a.ui-GPFV8.qUioe.ProductName.ActiveProduct span[itemprop="name"]')
         product_name = name_element.text
